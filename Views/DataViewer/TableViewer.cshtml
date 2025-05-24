@@ -1,0 +1,77 @@
+﻿@{
+	ViewData["Title"] = "Products";
+}
+
+
+<head>
+	<meta charset="utf-8" />
+	<title>Products</title>
+	<style>
+		table {
+			width: 100%;
+			border-collapse: collapse;
+		}
+
+		th, td {
+			border: 1px solid #666;
+			padding: 8px;
+			text-align: left;
+		}
+	</style>
+</head>
+
+<body>
+	<h2>Products</h2>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Name</th>
+				<th>Brand</th>
+				<th>Category</th>
+				<th>Price</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>IPhone 15</td>
+				<td>Apple</td>
+				<td>Smartphone</td>
+				<td>3000</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Samsung Galaxy</td>
+				<td>Samsung</td>
+				<td>Smartphone</td>
+				<td>2000</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Alienware</td>
+				<td>Dell</td>
+				<td>Laptop</td>
+				<td>5000</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Huawei MatePad</td>
+				<td>Huawei</td>
+				<td>Tablet</td>
+				<td>3500</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>Razer Blade 14</td>
+				<td>Razer</td>
+				<td>Laptop</td>
+				<td>4500</td>
+			</tr>
+			<tr>
+				<a asp-action="ExportToExcel" class="btn btn-success" style="background-color:#2ecc71">Export to Excel</a>
+				<a asp-action="ExportToPdf" class="btn btn-success" style="background-color:#e74c3c">Export to PDF</a>
+			</tr>
+		</tbody>
+	</table>
+</body>
