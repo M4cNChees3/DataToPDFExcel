@@ -1,4 +1,4 @@
-﻿@model List<DataModel>
+﻿@model List<ProductsView>
 @{
     Layout = null;
 }
@@ -30,6 +30,7 @@
                 <th>Name</th>
                 <th>Brand</th>
                 <th>Category</th>
+                <th>Color</th>
                 <th>Price</th>
             </tr>
         </thead>
@@ -37,10 +38,11 @@
             @foreach (var item in Model)
             {
                 <tr>
-                    <td>@item.ID</td>
-                    <td>@item.Name</td>
-                    <td>@item.Brand</td>
-                    <td>@item.Category</td>
+                    <td>@item.ProductID</td>
+                    <td>@item.ProductName</td>
+                    <td>@item.BrandName</td>
+                    <td>@item.CategoryName</td>
+                    <td>@item.Color</td>
                     <td>@item.Price</td>
                 </tr>
             }

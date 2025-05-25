@@ -1,8 +1,8 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using PDFExcelConverter.Models;
+using DataToPDFExcel.Models;
 
-namespace PDFExcelConverter.Controllers
+namespace DataToPDFExcel.Controllers
 {
     public class HomeController : Controller
     {

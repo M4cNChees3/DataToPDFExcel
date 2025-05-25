@@ -1,4 +1,4 @@
-namespace PDFExcelConverter.Models
+namespace DataToPDFExcel.Models
 {
     public class ErrorViewModel
     {

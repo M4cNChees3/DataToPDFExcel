@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace PDFExcelConverter.Data
+namespace DataToPDFExcel.Data
 {
     public class ApplicationDbContext : IdentityDbContext
     {

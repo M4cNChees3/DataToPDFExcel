@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace PDFExcelConverter.Data.Migrations
+namespace DataToPDFExcel.Data.Migrations
 {
     public partial class CreateIdentitySchema : Migration
     {
