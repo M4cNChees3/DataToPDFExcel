@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "Products Data";
+}
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Products</title>
+	<style>
+		table {
+			width: 100%;
+			border-collapse: collapse;
+		}
+
+		th, td {
+			border: 1px solid #666;
+			padding: 8px;
+			text-align: left;
+		}
+	</style>
+</head>
+
+<body>
+	<h2 style="text-align:center">Products</h2>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>ProductID</th>
+				<th>ProductName</th>
+				<th>Brand</th>
+				<th>Category</th>
+				<th>Color</th>
+				<th>Price</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var product in Model)
+			{
+				<tr>
+					<td>@product.ProductID</td>
+					<td>@product.ProductName</td>
+					<td>@product.Brand</td>
+					<td>@product.Category</td>
+					<td>@product.Color</td>
+					<td>@product.Price</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+</body>
+</html>
