@@ -1,5 +1,4 @@
 using DataToPDFExcel.Data;
-using DataToPDFExcel.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Rotativa.AspNetCore;
@@ -15,8 +14,6 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
-
-builder.Services.AddScoped<IProductsRepository, ProductsDAL>();
 
 var app = builder.Build();
 
