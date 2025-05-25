@@ -107,7 +107,7 @@ namespace DataToPDFExcel.Data
                             BrandID = reader["BrandID"].ToString(),
                             CategoryID = reader["CategoryID"].ToString(),
                             Color = reader["Color"].ToString(),
-                            Price = (int)reader["Price"]
+                            Price = Convert.ToDecimal(reader["Price"])
                         };
                     }
                 }
